@@ -1,0 +1,41 @@
+### Create an entry
+POST http://localhost:5000 HTTP/1.1
+content-type: application/json
+
+{
+    "date": "2022-10-10",
+    "keyword": "Hello!"
+}
+
+### Create another entry
+POST http://localhost:5000 HTTP/1.1
+content-type: application/json
+
+{
+    "date": "2022-11-10",
+    "keyword": "MEOW!"
+}
+
+### Create yet another entry
+POST http://localhost:5000 HTTP/1.1
+content-type: application/json
+
+{
+    "date": "2022-11-11",
+    "keyword": "CATS RULE!!!"
+}
+
+### Get all entries
+GET http://localhost:5000/ HTTP/1.1
+
+### Get a specific entry
+GET http://localhost:5000/2022-10-10 HTTP/1.1
+
+### Delete an entry
+DELETE http://localhost:5000/2022-10-10 HTTP/1.1
+
+### Delete second entry
+DELETE http://localhost:5000/2022-11-10 HTTP/1.1
+
+### DELETE 3rd Entry
+DELETE http://localhost:5000/2022-11-11 HTTP/1.1
