@@ -1,4 +1,4 @@
-from flask import render_template, request, jsonify
+from flask import jsonify
 from storageMicroservice.errors import bp
 
 @bp.app_errorhandler(404)
