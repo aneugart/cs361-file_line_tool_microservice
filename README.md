@@ -15,10 +15,8 @@ git clone https://github.com/aneugart/cs361-file_line_tool_microservice
 ``` bash
 pip install .
 ```
-4. From the "cs361-file_line_tool_microservice" directory, run the following commands to initilize the databse.
+4. From the "cs361-file_line_tool_microservice" directory, run the following command to create the databse.
 ``` bash
-flask db init
-flask db migrate
 flask db upgrade
 ```
 5. That should be it, you should now be ready to run teh application!
